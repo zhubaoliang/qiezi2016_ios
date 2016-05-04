@@ -1,0 +1,6 @@
+framework module Pods_QZTests {
+  umbrella header "Pods-QZTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
