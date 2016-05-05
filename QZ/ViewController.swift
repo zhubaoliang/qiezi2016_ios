@@ -14,11 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.blueColor()
         let revealController:SWRevealViewController = self.revealViewController()
-        revealController.panGestureRecognizer()
-    
+        self.navigationController?.navigationBar.addGestureRecognizer(revealController.panGestureRecognizer())
     }
     
     
+
 
 }
 

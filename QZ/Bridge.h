@@ -8,6 +8,8 @@
 
 #ifndef Bridge_h
 #define Bridge_h
-#import "SWRevealViewController.h"
 
+#import "SWRevealViewController.h"
+#import <HyphenateFullSDK/EMSDKFull.h>
+#import "EaseUI.h"
 #endif /* Bridge_h */

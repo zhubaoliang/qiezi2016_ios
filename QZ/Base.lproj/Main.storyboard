@@ -24,11 +24,11 @@
             </objects>
             <point key="canvasLocation" x="35.5" y="159.5"/>
         </scene>
-        <!--Item-->
+        <!--主页-->
         <scene sceneID="Hbr-fm-QrV">
             <objects>
                 <navigationController id="r6O-V9-QHs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="JYz-gb-dGk"/>
+                    <tabBarItem key="tabBarItem" title="主页" selectedImage="default.png" id="JYz-gb-dGk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="11I-NH-gdc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="-331.5" y="2970.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Left Viewcontroller-->
         <scene sceneID="UEj-0I-1Zx">
             <objects>
-                <viewController id="pc0-3J-hFL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="leftview" id="pc0-3J-hFL" customClass="LeftViewcontroller" customModule="QZ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xqi-Bl-ozH"/>
                         <viewControllerLayoutGuide type="bottom" id="u63-wB-ihr"/>
@@ -93,13 +93,56 @@
                     <view key="view" contentMode="scaleToFill" id="bD5-Sk-v91">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idX-qt-RBh">
+                                <rect key="frame" x="25" y="239" width="328" height="46"/>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXh-la-Y8J">
+                                <rect key="frame" x="25" y="293" width="328" height="46"/>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btj-lu-nVF">
+                                <rect key="frame" x="25" y="347" width="328" height="46"/>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4T-OZ-bJn">
+                                <rect key="frame" x="25" y="401" width="328" height="46"/>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsT-JL-a4f">
+                                <rect key="frame" x="25" y="455" width="328" height="46"/>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7J-hf-jrd">
+                                <rect key="frame" x="25" y="509" width="328" height="46"/>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="drawbg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="83t-bj-kT7">
+                                <rect key="frame" x="-77" y="-22" width="500" height="228"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="btj-lu-nVF" firstAttribute="top" secondItem="PXh-la-Y8J" secondAttribute="bottom" constant="8" id="1JX-5o-Cuo"/>
+                            <constraint firstItem="g7J-hf-jrd" firstAttribute="top" secondItem="CsT-JL-a4f" secondAttribute="bottom" constant="8" id="Er3-hZ-ciI"/>
+                            <constraint firstItem="n4T-OZ-bJn" firstAttribute="top" secondItem="btj-lu-nVF" secondAttribute="bottom" constant="8" id="aeC-DV-bX6"/>
+                            <constraint firstItem="PXh-la-Y8J" firstAttribute="top" secondItem="idX-qt-RBh" secondAttribute="bottom" constant="8" id="ibC-ZK-rar"/>
+                            <constraint firstItem="CsT-JL-a4f" firstAttribute="top" secondItem="n4T-OZ-bJn" secondAttribute="bottom" constant="8" id="tIy-pS-fMP"/>
+                            <constraint firstItem="u63-wB-ihr" firstAttribute="top" secondItem="g7J-hf-jrd" secondAttribute="bottom" constant="112" id="zt2-mm-jCw"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fys-FX-Tke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-740.5" y="3811.5"/>
+            <point key="canvasLocation" x="-740.5" y="3754.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="esX-fo-eoH">
@@ -119,12 +162,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1T-am-Pye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69.5" y="2978.5"/>
+            <point key="canvasLocation" x="75.5" y="2970.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Conversation List View Controller-->
         <scene sceneID="w9S-gS-RGa">
             <objects>
-                <viewController id="6xC-ww-oTx" sceneMemberID="viewController">
+                <viewController id="6xC-ww-oTx" customClass="ConversationListViewController" customModule="QZ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aMg-ZW-dwE"/>
                         <viewControllerLayoutGuide type="bottom" id="KVi-GZ-yZf"/>
@@ -161,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="885.5" y="2970.5"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tabcontroller-->
         <scene sceneID="qII-dk-d2O">
             <objects>
-                <tabBarController storyboardIdentifier="MainView" id="kuE-PA-gbK" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainView" id="kuE-PA-gbK" customClass="Tabcontroller" customModule="QZ" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5pK-1l-Szt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -181,13 +224,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPI-Dx-fcG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35.5" y="986.5"/>
+            <point key="canvasLocation" x="-311.5" y="954.5"/>
         </scene>
-        <!--Item-->
+        <!--我要拍-->
         <scene sceneID="irA-pN-ihb">
             <objects>
                 <navigationController id="7bC-65-ekA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="KyZ-F9-8b4"/>
+                    <tabBarItem key="tabBarItem" title="我要拍" id="KyZ-F9-8b4"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Eh-9t-46e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -201,11 +244,11 @@
             </objects>
             <point key="canvasLocation" x="64.5" y="2062.5"/>
         </scene>
-        <!--Item-->
+        <!--活动-->
         <scene sceneID="tp5-4M-W4o">
             <objects>
                 <navigationController id="qGq-VK-Two" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6nH-zy-ZIz"/>
+                    <tabBarItem key="tabBarItem" title="活动" id="6nH-zy-ZIz"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BiS-ww-P84">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -219,11 +262,11 @@
             </objects>
             <point key="canvasLocation" x="-331.5" y="2068.5"/>
         </scene>
-        <!--Item-->
+        <!--消息-->
         <scene sceneID="Qi0-ky-fpZ">
             <objects>
                 <navigationController id="AjB-ZQ-p46" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="sWg-sV-ig6"/>
+                    <tabBarItem key="tabBarItem" title="消息" id="sWg-sV-ig6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xPT-3C-rRm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -237,11 +280,11 @@
             </objects>
             <point key="canvasLocation" x="476.5" y="2062.5"/>
         </scene>
-        <!--Item-->
+        <!--我-->
         <scene sceneID="daS-os-jfA">
             <objects>
                 <navigationController id="qPL-Dp-WwV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ox0-a6-CBp"/>
+                    <tabBarItem key="tabBarItem" title="我" id="ox0-a6-CBp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IPg-oT-C2c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -256,4 +299,8 @@
             <point key="canvasLocation" x="892.5" y="2062.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default.png" width="53" height="29"/>
+        <image name="drawbg.jpg" width="500" height="298"/>
+    </resources>
 </document>
