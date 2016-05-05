@@ -15,14 +15,13 @@ class ConversationListViewController: EaseConversationListViewController,EaseCon
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.barTintColor = UIColor.purpleColor()
         self.title = "消息"
         self.showRefreshHeader = true
         self.delegate = self
         self.dataSource = self
         
         self.tableViewDidTriggerHeaderRefresh()
-        self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
 //        网络出现故障时
         
         self.NetworkStateView()

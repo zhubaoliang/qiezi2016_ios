@@ -27,9 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate,EMClientDelegate {
         
         dispatch_async(dispatch_get_global_queue(0, 0), {
         
-        
+        //实现自动登陆设置
             EMClient.sharedClient().addDelegate(self, delegateQueue: nil)
             let options = EMOptions.init(appkey: "xiaocool#qiezi")
+            options.apnsCertName = "push_dev"
             EMClient.sharedClient().initializeSDKWithOptions(options)
             if EMClient.sharedClient().options.isAutoLogin == true
             {
@@ -48,9 +49,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate,EMClientDelegate {
                 EMClient.sharedClient().options.isAutoLogin = true
                 
             }
-
+            //实现apns离线推送
+            if(application.respondsToSelector(#selector(UIApplication.registerForRemoteNotifications))){
+                application.registerForRemoteNotifications()
+                let notificationTypes:UIUserNotificationType = UIUserNotificationType(arrayLiteral: .Alert,.Badge,.Sound)
+                let settings:UIUserNotificationSettings = UIUserNotificationSettings.init(forTypes: notificationTypes, categories: nil)
+                application.registerUserNotificationSettings(settings)
+            }else{
+                let notificationTypes:UIRemoteNotificationType = UIRemoteNotificationType(arrayLiteral: .Alert,.Badge,.Sound)
+                application.registerForRemoteNotificationTypes(notificationTypes)
+                
+            }
         
         })
+        
         
         
         return true

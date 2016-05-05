@@ -10,5 +10,6 @@ import UIKit
 class Tabcontroller: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBar.barTintColor = UIColor.purpleColor()
             }
 }

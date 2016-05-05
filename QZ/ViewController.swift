@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+         self.navigationController?.navigationBar.barTintColor = UIColor.purpleColor()
         self.view.backgroundColor = UIColor.blueColor()
         let revealController:SWRevealViewController = self.revealViewController()
         self.navigationController?.navigationBar.addGestureRecognizer(revealController.panGestureRecognizer())

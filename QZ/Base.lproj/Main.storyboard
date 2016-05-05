@@ -177,7 +177,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sof-rG-gpb"/>
+                    <navigationItem key="navigationItem" id="sof-rG-gpb">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="add" id="eJY-ua-bbh">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="okT-PH-nQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
