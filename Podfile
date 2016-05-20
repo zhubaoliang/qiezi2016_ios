@@ -3,11 +3,12 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
-pod 'Alamofire', '3.3.1'
+pod 'Alamofire', '3.0.0'
 pod 'MJRefresh', '3.1.0'
 pod 'MBProgressHUD', '0.9.2'
 pod 'SDCycleScrollView','1.64'
 pod 'HyphenateFullSDK', '3.1.2'
+pod 'BaiduMapKit’, ‘2.10.2’
 use_frameworks!
 
 target 'QZ' do
