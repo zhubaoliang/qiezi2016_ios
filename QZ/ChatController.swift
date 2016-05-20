@@ -10,9 +10,13 @@ import UIKit
 class ChatController:EaseMessageViewController, EaseMessageViewControllerDelegate, EaseMessageViewControllerDataSource  {
     var avatarImage = UIImage()
     var nikNmae = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
     }
+    
+    
     override func viewWillAppear(animated: Bool) {
         self.hidesBottomBarWhenPushed = true
         self.dataSource = self
@@ -22,6 +26,7 @@ class ChatController:EaseMessageViewController, EaseMessageViewControllerDelegat
         
         self.conversation.markAllMessagesAsRead()
     }
+    
     
     override func viewDidDisappear(animated: Bool) {
         //self.hidesBottomBarWhenPushed = false

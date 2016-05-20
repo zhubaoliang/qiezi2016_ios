@@ -11,5 +11,12 @@ class Tabcontroller: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBar.barTintColor = UIColor.purpleColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.purpleColor()
+        self.view.backgroundColor = UIColor.blueColor()
+        let revealController:SWRevealViewController = self.revealViewController()
+        revealController.panGestureRecognizer()
+        
             }
+    
+   
 }
