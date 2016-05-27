@@ -14,11 +14,12 @@ class ActivityCell: UITableViewCell {
     let sign = UILabel()
     var pictures = UIView()
     var zanButton = UIButton()
+    var commentButton = UIButton()
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    init(style: UITableViewCellStyle, reuseIdentifier: String?,pictureArray:[UIImage]) {
+    init(style: UITableViewCellStyle, reuseIdentifier: String?,pictureArray:[UIImage],Button:[UIButton]) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         userImageView.backgroundColor = UIColor.redColor()
@@ -26,7 +27,7 @@ class ActivityCell: UITableViewCell {
         sign.backgroundColor = UIColor.grayColor()
         pictures = collectionPictures.init(imagesArray: pictureArray)
         
-        self.contentView.sd_addSubviews([userImageView,textLable,sign,pictures])
+        self.contentView.sd_addSubviews([userImageView,textLable,sign,pictures,Button[0],Button[1]])
         
         userImageView.sd_layout()
         .topSpaceToView(self.contentView,10)
@@ -111,7 +112,20 @@ class ActivityCell: UITableViewCell {
             print("超出范围")
         }
         
-        self.setupAutoHeightWithBottomViewsArray([pictures], bottomMargin: 10)
+        Button[1].sd_layout()
+        .topSpaceToView(pictures,5)
+        .rightSpaceToView(self.contentView,10)
+        .widthIs(50)
+        .heightIs(30)
+        
+        Button[0].sd_layout()
+        .rightSpaceToView(Button[1],5)
+        .topEqualToView(Button[1])
+        .widthIs(50)
+        .heightIs(30)
+        Button[1].backgroundColor = UIColor.blueColor()
+        Button[0].backgroundColor = UIColor.blueColor()
+        self.setupAutoHeightWithBottomViewsArray([Button[0]], bottomMargin: 10)
         
     }
     

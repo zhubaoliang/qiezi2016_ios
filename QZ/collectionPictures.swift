@@ -16,7 +16,6 @@ class collectionPictures: UIView {
     init(imagesArray:[UIImage]) {
         cFrame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width - 20, UIScreen.mainScreen().bounds.width - 20)
         super.init(frame: cFrame)
-        self.backgroundColor = UIColor.redColor()
         switch imagesArray.count {
         case 1:
             
