@@ -49,24 +49,67 @@ class ActivityCell: UITableViewCell {
         switch pictureArray.count {
         case 1:
         pictures.sd_layout()
-        .autoHeightRatio(1)
+        .autoHeightRatio(0.5)
         .leftSpaceToView(self.contentView,10)
-        .rightSpaceToView(self.contentView,self.contentView.frame.width  / 3)
+        .rightSpaceToView(self.contentView,10)
         .topSpaceToView(textLable,5)
         case 2:
         pictures.sd_layout()
+        .autoHeightRatio(0.5)
+        .leftSpaceToView(self.contentView,10)
+        .rightSpaceToView(self.contentView,10)
+        .topSpaceToView(textLable,5)
+        case 3:
+        pictures.sd_layout()
+        .autoHeightRatio(0.4)
+        .leftSpaceToView(self.contentView,10)
+        .rightSpaceToView(self.contentView,10)
+        .topSpaceToView(textLable,5)
+        case 3:
+        pictures.sd_layout()
+        .autoHeightRatio(0.4)
+        .leftSpaceToView(self.contentView,10)
+        .rightSpaceToView(self.contentView,10)
+        .topSpaceToView(textLable,5)
+        case 4:
+        pictures.sd_layout()
+        .autoHeightRatio(2 / 3)
+        .leftSpaceToView(self.contentView,10)
+        .rightSpaceToView(self.contentView,10)
+        .topSpaceToView(textLable,5)
+        case 5:
+        pictures.sd_layout()
+        .autoHeightRatio(2 / 3)
+        .leftSpaceToView(self.contentView,10)
+        .rightSpaceToView(self.contentView,10)
+        .topSpaceToView(textLable,5)
+        case 6:
+        pictures.sd_layout()
+        .autoHeightRatio(2 / 3)
+        .leftSpaceToView(self.contentView,10)
+        .rightSpaceToView(self.contentView,10)
+        .topSpaceToView(textLable,5)
+        case 7:
+        pictures.sd_layout()
         .autoHeightRatio(1)
         .leftSpaceToView(self.contentView,10)
-        .rightSpaceToView(self.contentView,self.contentView.frame.width  / 3)
+        .rightSpaceToView(self.contentView,10)
         .topSpaceToView(textLable,5)
-            
-            
+        case 8:
+        pictures.sd_layout()
+        .autoHeightRatio(1)
+        .leftSpaceToView(self.contentView,10)
+        .rightSpaceToView(self.contentView,10)
+        .topSpaceToView(textLable,5)
+        case 9:
+        pictures.sd_layout()
+        .autoHeightRatio(1)
+        .leftSpaceToView(self.contentView,10)
+        .rightSpaceToView(self.contentView,10)
+        .topSpaceToView(textLable,5)
         default:
             print("超出范围")
         }
-        
-        
-        
         
         self.setupAutoHeightWithBottomViewsArray([pictures], bottomMargin: 10)
         

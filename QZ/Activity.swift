@@ -9,7 +9,7 @@
 import UIKit
 class Activity: UITableViewController {
    
-    let tetarray = ["fdsfdsfdsafdsafdsfdsagdsfbgdfhngynytnbgtntnrtnbrtnbtrbnrtbrtbtrgbgrtfbbghjgjgjgjgjgjugjbgjubgjlbjbhhnkljnkjlhnkljhnkjlbkjlbjklbjklbjklbjklbjklb"]
+    let tetarray = ["fdsfdsfdsafdsafdsfdsagdsfbgdfhngynytnbgtntnrtnbrtnbtrbnrtbrtbtrgbgrtfbbghjgjgjgjgjgjugjbgjubgjlbjbhhnkljnkjlhnkljhnkjlbkjlbjklbjklbjklbjklbjklbguyguygyugyyuguyguvuyvhuyvuyvhuyvuhyvuhyvhuyvhuyvuhvhuvhuvhuyjvhuvhvhukvhuvhuvhuvhujvhuvuhyvuhyvuyuhyvhuvhuvuhvhuvhjuvhujvhjuvhuvhuvhjuvhjuvhuvytcfrdrtserserzzdxfgtdxtydtydtysxyrasrtazrtsrtstudtukeduyrduydftydtydty"]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.redColor()
@@ -21,7 +21,7 @@ class Activity: UITableViewController {
         return 100
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:ActivityCell = ActivityCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: "Activity", pictureArray: [UIImage.init(named: "homepage_p4.jpg")!])
+        let cell:ActivityCell = ActivityCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: "Activity", pictureArray: [UIImage.init(named: "homepage_p4.jpg")!,UIImage.init(named: "homepage_p4.jpg")!,UIImage.init(named: "homepage_p4.jpg")!,UIImage.init(named: "homepage_p4.jpg")!,UIImage.init(named: "homepage_p4.jpg")!,UIImage.init(named: "homepage_p4.jpg")!,UIImage.init(named: "homepage_p4.jpg")!,UIImage.init(named: "homepage_p4.jpg")!,UIImage.init(named: "homepage_p4.jpg")!])
         cell.textLable.text = tetarray[0]
         cell.sign.text = tetarray[0]
         cell.selectionStyle = UITableViewCellSelectionStyle.None
