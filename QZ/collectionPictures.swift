@@ -8,14 +8,16 @@
 
 import UIKit
 class collectionPictures: UIView {
+    let TapGesture = UITapGestureRecognizer()
     var cFrame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width - 20, UIScreen.mainScreen().bounds.width - 20)
-    required init?(coder aDecoder: NSCoder) {
+        required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
     init(imagesArray:[UIImage]) {
         cFrame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width - 20, UIScreen.mainScreen().bounds.width - 20)
         super.init(frame: cFrame)
+        TapGesture.addTarget(self, action: #selector(self.gestureForPicture))
         switch imagesArray.count {
         case 1:
             
@@ -176,6 +178,8 @@ class collectionPictures: UIView {
             let image0 = UIImageView()
             image0.image = imagesArray[0]
             image0.frame = CGRectMake(0, 0, self.frame.width  / 3 - 1 , self.frame.width  / 3 - 1 )
+            image0.userInteractionEnabled = true
+            image0.addGestureRecognizer(TapGesture)
             self.addSubview(image0)
             let image1 = UIImageView()
             image1.image = imagesArray[1]
@@ -214,5 +218,13 @@ class collectionPictures: UIView {
         default:
             print("超出范围")
         }
+    }
+    
+    func gestureForPicture()
+    {
+        print("点击图片")
+
+        NSNotificationCenter.defaultCenter().postNotificationName("pushpicture", object: nil)
+       
     }
 }

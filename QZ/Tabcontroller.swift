@@ -17,6 +17,5 @@ class Tabcontroller: UITabBarController {
         revealController.panGestureRecognizer()
         
             }
-    
-   
+      
 }

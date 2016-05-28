@@ -35,6 +35,7 @@
 		81ADC6F21CE0B464000AED42 /* RegisterFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ADC6F11CE0B464000AED42 /* RegisterFunc.swift */; };
 		81ADC6F61CE0BA7D000AED42 /* JxbScaleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 81ADC6F51CE0BA7D000AED42 /* JxbScaleButton.m */; };
 		81B5C7CF1CE1A21A00496F95 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5C7CE1CE1A21A00496F95 /* ChatList.swift */; };
+		81C77D9A1CF9956500C115E0 /* PhotographerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C77D991CF9956500C115E0 /* PhotographerView.swift */; };
 		D219B24CB88570C09A089C4D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8AD9290D98F4CCC5B6A189 /* Pods.framework */; };
 		F60917B91CDDF1DA00F0094C /* LoginBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F60917B71CDDF1DA00F0094C /* LoginBtn.png */; };
 		F60917BA1CDDF1DA00F0094C /* Register.png in Resources */ = {isa = PBXBuildFile; fileRef = F60917B81CDDF1DA00F0094C /* Register.png */; };
@@ -310,6 +311,7 @@
 		81ADC6F41CE0BA4E000AED42 /* JxbScaleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JxbScaleButton.h; sourceTree = "<group>"; };
 		81ADC6F51CE0BA7D000AED42 /* JxbScaleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbScaleButton.m; sourceTree = "<group>"; };
 		81B5C7CE1CE1A21A00496F95 /* ChatList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		81C77D991CF9956500C115E0 /* PhotographerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotographerView.swift; sourceTree = "<group>"; };
 		BD8AD9290D98F4CCC5B6A189 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60917B71CDDF1DA00F0094C /* LoginBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBtn.png; sourceTree = "<group>"; };
 		F60917B81CDDF1DA00F0094C /* Register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register.png; sourceTree = "<group>"; };
@@ -726,6 +728,7 @@
 				F6DCAF9F1CDAE1760093F297 /* PrefixHeader.pch */,
 				F6E411521CDA0AFF0059D7D4 /* Bridge.h */,
 				F60917E11CDE220500F0094C /* URL.swift */,
+				81C77D971CF9950600C115E0 /* Photographer */,
 				819C2EDE1CEC6C4E0011B7FF /* ChangeData */,
 				F60917C31CDDF8D700F0094C /* Login */,
 				F60917B21CDDF04700F0094C /* Register */,
@@ -850,6 +853,22 @@
 				81ADC6F51CE0BA7D000AED42 /* JxbScaleButton.m */,
 			);
 			name = Time;
+			sourceTree = "<group>";
+		};
+		81C77D971CF9950600C115E0 /* Photographer */ = {
+			isa = PBXGroup;
+			children = (
+				81C77D981CF9954200C115E0 /* View */,
+			);
+			name = Photographer;
+			sourceTree = "<group>";
+		};
+		81C77D981CF9954200C115E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81C77D991CF9956500C115E0 /* PhotographerView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		F60917B21CDDF04700F0094C /* Register */ = {
@@ -2096,6 +2115,7 @@
 				F6DCAF8F1CDAE0590093F297 /* EaseBubbleView+Location.m in Sources */,
 				F6E4114F1CDA07990059D7D4 /* LeftViewcontroller.swift in Sources */,
 				F6E4115D1CDA0DD40059D7D4 /* ConnectModel.m in Sources */,
+				81C77D9A1CF9956500C115E0 /* PhotographerView.swift in Sources */,
 				F6DCAF711CDAE0590093F297 /* EaseConversationModel.m in Sources */,
 				F6DCAF5C1CDAE0590093F297 /* UIImage+EMGIF.m in Sources */,
 				F6E4115C1CDA0DD40059D7D4 /* BRPlaceholderTextView.m in Sources */,
